@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,19 +15,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CookBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnc-68-4lY" userLabel="Red">
-                                <rect key="frame" x="261.5" y="120" width="506.5" height="884"/>
+                                <rect key="frame" x="130.5" y="120" width="244.5" height="527"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.024170271515557396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-oB-c4D" userLabel="Blue">
-                                <rect key="frame" x="0.0" y="120" width="253.5" height="884"/>
+                                <rect key="frame" x="0.0" y="120" width="122.5" height="527"/>
                                 <color key="backgroundColor" red="0.051293818677436653" green="0.18148067039581994" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueRed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-EB-LAp">
-                                <rect key="frame" x="320" y="9" width="128.5" height="41"/>
+                                <rect key="frame" x="156" y="29.5" width="63.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +49,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gJ8-oB-c4D" secondAttribute="bottom" constant="20" id="HjF-aT-g2I"/>
                             <constraint firstItem="Jnc-68-4lY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LHP-oL-wnj"/>
                             <constraint firstItem="G4R-8K-p88" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pck-rz-cAv"/>
-                            <constraint firstItem="Jnc-68-4lY" firstAttribute="top" secondItem="wSG-EB-LAp" secondAttribute="bottom" constant="70" id="SE6-iB-uMf"/>
+                            <constraint firstItem="Jnc-68-4lY" firstAttribute="top" secondItem="wSG-EB-LAp" secondAttribute="bottom" constant="70" id="SE6-iB-uMf">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="gJ8-oB-c4D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TOo-93-QSW"/>
                             <constraint firstItem="Jnc-68-4lY" firstAttribute="leading" secondItem="gJ8-oB-c4D" secondAttribute="trailing" constant="8" id="VhH-Vx-hAq"/>
                             <constraint firstItem="Jnc-68-4lY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="a0G-QH-poF"/>
@@ -59,12 +61,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="G4R-8K-p88"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="Pck-rz-cAv"/>
                                 <exclude reference="kpb-BU-dyc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="G4R-8K-p88"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="Pck-rz-cAv"/>
                                 <include reference="kpb-BU-dyc"/>
